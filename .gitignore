@@ -1,0 +1,4 @@
+node_modules/*
+RootPublic/*
+package-lock.json
+rootSrc/secrets/*

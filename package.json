@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node .\\RootSrc\\server.ts"
+    "dev": "ts-node .\\RootSrc\\server.ts",
+    "build": "tsc && npm run buildSvelte",
+    "buildSvelte": "cd ./Svelte && npm run build && cd ..",
+    "public": "npm run build && node build/server.js"
   },
   "keywords": [],
   "author": "",

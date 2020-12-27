@@ -1,18 +1,17 @@
-//express to handle requests
 import express, { Application, Request, Response, NextFunction } from "express";
-//path for including files
 import path from "path";
-//express app
+
 const app = express();
-//port
 const port = 3000;
 
-//import route from "./route";
-const route = require("./route");
+//import route from "./routes";
+const route = require("./routes");
 app.use(route);
 
+console.log("pog");
+
 //serve anything in the static folder as is
-app.use(express.static(path.join(__dirname, "../Static")));
+app.use(express.static(path.join(__dirname, "../static")));
 
 app.listen(port, () => {
   console.log(`server running on ${port}`);

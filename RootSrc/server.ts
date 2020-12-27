@@ -8,8 +8,6 @@ const port = 3000;
 const route = require("./routes");
 app.use(route);
 
-console.log("pog");
-
 //serve anything in the static folder as is
 app.use(express.static(path.join(__dirname, "../static")));
 

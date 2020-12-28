@@ -13,9 +13,7 @@ app.use((req, res, next) => {
 const route = require("./routes");
 app.use(route);
 
-//serve anything in the static folder as is
-//app.use(express.static(path.join(__dirname, "../static")));
-
+//listen on port for client
 app.listen(port, () => {
   console.log(`http://localhost:3000`);
   console.log(`server running on ${port}`);
